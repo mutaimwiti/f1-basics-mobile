@@ -1,9 +1,9 @@
 import React from 'react';
 import {View} from 'react-native';
 
-import Title from "./src/Title";
-import F1Image from "./src/F1Image";
-import F12020Grid from "./src/F12020Grid";
+import Title from "./src/components/Title";
+import F1Image from "./src/components/F1Image";
+import F12020Grid from "./src/components/F12020Grid";
 
 import {image, drivers} from "./src/utils/data";
 
