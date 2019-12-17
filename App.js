@@ -1,21 +1,33 @@
 import React from 'react';
-import {View} from 'react-native';
+import {View, ScrollView, StyleSheet} from 'react-native';
 
-import Grid from "./src/components/Grid";
 import Title from "./src/components/Title";
-import F1Image from "./src/components/Photo";
+import Photo from "./src/components/Photo";
+import Drivers from "./src/components/Drivers";
+import Constructors from "./src/components/Constructors";
 
-import {image, drivers} from "./src/utils/data";
+import {image, constructors, drivers} from "./src/utils/data";
 
 export default class App extends React.Component {
   render() {
     return (
-      <View>
-        <Title data={'Formula 1'}/>
-        <F1Image image={image}/>
-        <Title data={'2020 Grid'}/>
-        <Grid drivers={drivers}/>
+      <View styles={this.styles.root}>
+        <ScrollView>
+          <Title data={'Formula 1'}/>
+          <Photo image={image}/>
+          <Title data={'2020 Constructors'}/>
+          <Constructors constructors={constructors}/>
+          <Title data={'2020 Drivers'}/>
+          <Drivers drivers={drivers}/>
+        </ScrollView>
       </View>
     )
   }
+
+  styles = StyleSheet.create({
+    root: {
+      paddingBottom: '50%',
+      marginBottom: '50%'
+    }
+  })
 }

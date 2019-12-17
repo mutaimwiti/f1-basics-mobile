@@ -1,5 +1,18 @@
 const image = {uri: 'https://www.formula1.com/content/dam/fom-website/manual/XPB_Images/XPB_1025389_HiRes.jpg.transform/9col/image.jpg'};
 
+const constructors = [
+  {key: 'mercedes', name: 'Mercedes'},
+  {key: 'ferrari', name: 'Fearrari'},
+  {key: 'redbull', name: 'Redbull Racing Honda'},
+  {key: 'maclaren', name: 'Maclaren Renault'},
+  {key: 'renault', name: 'Renault'},
+  {key: 'toro-roso', name: 'Scuderia Toro Rosso Honda'},
+  {key: 'racing-point', name: 'Racing Point BWT Mercedes'},
+  {key: 'alfa-romeo', name: 'Alfa Romeo Racing Ferrari'},
+  {key: 'haas', name: 'Haas Ferrari'},
+  {key: 'williams', name: 'Williams Mercedes'},
+];
+
 const drivers = [
   {key: '44', name: 'Lewis Hamilton'},
   {key: '77', name: 'Valteri Bottas'},
@@ -23,4 +36,4 @@ const drivers = [
   {key: '88', name: 'Robert Kubica'},
 ];
 
-export {image, drivers};
+export {image, constructors, drivers};
