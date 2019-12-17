@@ -1,14 +1,16 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
+import F12020Grid from "./src/F12020Grid";
+import {image, drivers} from "./src/utils/data";
 
 export default class App extends React.Component {
   render() {
-    const image = {uri: 'https://www.formula1.com/content/dam/fom-website/manual/XPB_Images/XPB_1025389_HiRes.jpg.transform/9col/image.jpg'};
-
     return (
       <View>
         <Text style={this.styles.title}>Nico Hulkenberg</Text>
         <Image source={image} style={this.styles.image}/>
+        <Text style={this.styles.title}>2019 Grid Drivers</Text>
+        <F12020Grid drivers={drivers}/>
       </View>
     )
   }
