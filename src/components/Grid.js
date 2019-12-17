@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, FlatList, StyleSheet, View} from 'react-native';
 
-export default class F12020Grid extends React.Component {
+export default class Grid extends React.Component {
   render() {
     const {drivers} = this.props;
 
