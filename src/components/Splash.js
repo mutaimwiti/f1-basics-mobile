@@ -1,11 +1,12 @@
 import React from 'react';
-import {StyleSheet, Image} from 'react-native';
+import {StyleSheet, Image, View} from 'react-native';
 
 import {images} from "../utils/data";
+import Title from "./Title";
 
 const TIMEOUT = 2000;
 
-export default class DynamicImage extends React.Component {
+export default class Splash extends React.Component {
   constructor(props) {
     super(props);
     this.state = {current: {uri: this.getRandomImage()}};
@@ -14,7 +15,10 @@ export default class DynamicImage extends React.Component {
   render() {
     const {current} = this.state;
 
-    return <Image source={current} style={this.styles.image}/>;
+    return <View style={this.styles.view}>
+      <Title data={'Formula 1'}/>
+      <Image source={current} style={this.styles.image}/>
+    </View>;
   }
 
   componentDidMount() {
@@ -30,10 +34,12 @@ export default class DynamicImage extends React.Component {
   };
 
   styles = StyleSheet.create({
+    view: {
+      marginLeft: '5%'
+    },
     image: {
-      marginLeft: '5%',
       marginTop: '2%',
-      width: '90%',
+      width: '95%',
       aspectRatio: 1,
       borderRadius: 10
     }

@@ -11,7 +11,6 @@ export default class App extends React.Component {
   styles = StyleSheet.create({
     title: {
       marginTop: '5%',
-      textAlign: 'center',
       fontWeight: 'bold',
       fontSize: 20
     }
