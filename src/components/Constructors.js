@@ -29,7 +29,7 @@ export default class Constructors extends React.Component {
 
   styles = StyleSheet.create({
     list: {
-      marginTop: '5%',
+      marginTop: 5,
     },
     view: {
       marginLeft: '5%',

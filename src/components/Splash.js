@@ -38,7 +38,7 @@ export default class Splash extends React.Component {
       marginLeft: '5%'
     },
     image: {
-      marginTop: '2%',
+      marginTop: 10,
       width: '95%',
       aspectRatio: 1,
       borderRadius: 10

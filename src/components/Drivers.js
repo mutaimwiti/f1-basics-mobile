@@ -48,7 +48,7 @@ export default class Drivers extends React.Component {
       flexDirection: 'row'
     },
     list: {
-      marginTop: '5%',
+      marginTop: 10,
     },
     item: {
       fontWeight: 'bold',
