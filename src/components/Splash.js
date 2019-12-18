@@ -1,10 +1,10 @@
 import React from 'react';
 import {StyleSheet, Image, View} from 'react-native';
 
-import {images} from "../utils/data";
 import Title from "./Title";
+import {images} from "../utils/data";
 
-const TIMEOUT = 2000;
+const TIMEOUT = 10000;
 
 export default class Splash extends React.Component {
   constructor(props) {
