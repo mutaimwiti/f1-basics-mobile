@@ -1,11 +1,10 @@
 import React from 'react';
 import {YellowBox, ScrollView, StyleSheet} from 'react-native';
 
-import Title from "./src/components/Title";
 import Search from "./src/components/Search";
+import Splash from "./src/components/Splash";
 import Drivers from "./src/components/Drivers";
 import Constructors from "./src/components/Constructors";
-import Splash from "./src/components/Splash";
 
 YellowBox.ignoreWarnings([
   'VirtualizedLists should never be nested', // TODO: Remove when fixed

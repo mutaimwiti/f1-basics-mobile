@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Image, View} from 'react-native';
+import {StyleSheet, Image, View, Button, ScrollView} from 'react-native';
 
 import Title from "./Title";
 import {images} from "../utils/data";
@@ -18,22 +18,36 @@ export default class Splash extends React.Component {
     return <View style={this.styles.view}>
       <Title data={'Formula 1'}/>
       <Image source={current} style={this.styles.image}/>
+      <View style={this.styles.button}>
+        <Button
+          color='#ff1801'
+          title='Random Image'
+          onPress={() => this.setRandomImage()}/>
+      </View>
     </View>;
   }
 
   componentDidMount() {
     setTimeout(() => {
       setInterval(() => {
-        this.setState({current: {uri: this.getRandomImage()}})
+        this.setRandomImage();
       }, TIMEOUT);
     }, TIMEOUT);
   }
 
+  setRandomImage = () => {
+    this.setState({current: {uri: this.getRandomImage()}})
+  };
+
   getRandomImage = () => {
-      return images[Math.floor(Math.random() * images.length)]
+    return images[Math.floor(Math.random() * images.length)]
   };
 
   styles = StyleSheet.create({
+    button: {
+      marginTop: 10,
+      width: '95%',
+    },
     view: {
       marginLeft: '5%'
     },
