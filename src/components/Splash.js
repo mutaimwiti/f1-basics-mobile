@@ -1,5 +1,6 @@
 import React from 'react';
-import {StyleSheet, Image, View, Button, ScrollView} from 'react-native';
+import { Button } from 'react-native-elements';
+import {StyleSheet, Image, View} from 'react-native';
 
 import Title from "./Title";
 import {images} from "../utils/data";
@@ -18,9 +19,9 @@ export default class Splash extends React.Component {
     return <View style={this.styles.view}>
       <Title data={'Formula 1'}/>
       <Image source={current} style={this.styles.image}/>
-      <View style={this.styles.button}>
+      <View>
         <Button
-          color='#ff1801'
+          buttonStyle={this.styles.button}
           title='Random Image'
           onPress={() => this.setRandomImage()}/>
       </View>
@@ -45,6 +46,8 @@ export default class Splash extends React.Component {
 
   styles = StyleSheet.create({
     button: {
+      backgroundColor: '#ff1801',
+      borderRadius: 5,
       marginTop: 10,
       width: '95%',
     },
