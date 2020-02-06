@@ -1,2 +1,2 @@
 # f1-basics-mobile
-F1 Basics Mobile App
+F1 drivers and constructors basic data
