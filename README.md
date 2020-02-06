@@ -1,2 +1,2 @@
-# first-react-native
-First React Native App
+# f1-basics-mobile-app
+F1 Basics Mobile App
